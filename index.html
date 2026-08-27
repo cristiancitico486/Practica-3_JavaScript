@@ -20,19 +20,26 @@
   <form id="formMedico">
     <label for="nombresMedico">Nombres</label>
     <input type="text" id="nombresMedico" placeholder="Nombres" required>
+    <label class ="error" id="errorNombresMedico" class="mensaje-error"></label>
     <label for="apellidosMedico">Apellidos</label>
     <input type="text" id="apellidosMedico" placeholder="Apellidos" required>
+    <label class="error" id="errorApellidosMedico" class="mensaje-error"></label>
     <label for="especialidadMedico">Especilidad</label>
     <input type="text" id="especialidadMedico" placeholder="Especialidad" required>
+    <label class="error" id="errorEspecialidadMedico" class="mensaje-error"></label>
     <label for="horarioAtencionInicio "id="horaInicioLabel">Hora de Inicio</label> <!-- Se mete label pq el placeholder no se ve con el input type="time" -->
     <input type="time" id="horarioAtencionInicio" placeholder="Hora de Inicio" required>
+    <label class ="error" id="errorHorarioAtencionInicio" class="mensaje-error"></label>
     <label for="horarioAtencionFin" id="horaFinLabel">Hora de Fin</label>
     <input type="time" id="horarioAtencionFin" placeholder="Hora de Fin" required>
+    <label class="error" id="errorHorarioAtencionFin" class="mensaje-error"></label>
     <label for="aniosExperiencia">Experiencia </label>
     <input type="number" min='0' step='1' id="aniosExperienciaMedico" placeholder="Años de Experiencia" required>
+    <label class="error" id="errorAniosExperienciaMedico" class="mensaje-error"></label>
     <!-- Ese min y step es para evitar numeros negativos jasjas-->
      <label for="biografiaMedico">Biografia</label>
     <input type="text" id="biografiaMedico" placeholder="Biografía" required>
+    <label class="error" id="errorBiografiaMedico" class="mensaje-error"></label>
     <button type="submit" id="btnAgregarMedico" disabled>Agregar Medico</button>
   </form>
 
@@ -40,8 +47,10 @@
   <form id="formPaciente">
     <label for="nombresPaciente">Nombres</label>
     <input type="text" id="nombresPaciente" placeholder="Nombres" required>
+    <label class="error" id="errorNombresPaciente" class="mensaje-error"></label>
     <label for="apellidosPaciente">Apellidos</label>
     <input type="text" id="apellidosPaciente" placeholder="Apellidos" required>
+    <label class="error" id="errorApellidosPaciente" class="mensaje-error"></label>
     <button type="submit" id="btnAgregarPaciente" disabled>Agregar Paciente</button>
   </form>
 
@@ -106,6 +115,8 @@
   <script src="capaDePresentacion/logicaPaciente.js"></script>
   <script src="capaDePresentacion/logicaCita.js"></script>
 
+  <!--5. Validacion-->
+  <script src="validaciones/validacion.js"></script>
 
 </body>
 </html>
