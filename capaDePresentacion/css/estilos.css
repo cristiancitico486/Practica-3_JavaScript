@@ -3,13 +3,14 @@ body {
     margin: 20px;
     background-color: #f4f4f4;
 }
-/* Estilito para que pareza un placeholder jasjas */
+/* Estilito para que pareza un placeholder jasjas 
 #horaInicioLabel, #horaFinLabel {
       color: #888888;
   font-family: Arial, sans-serif;
   font-size: 13px;
   opacity: 1;
 }
+  */
 
 h2 {
     color: #333;

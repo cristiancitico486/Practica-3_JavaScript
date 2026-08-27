@@ -18,22 +18,29 @@
 
   <h2>Registrar Médico</h2>
   <form id="formMedico">
+    <label for="nombresMedico">Nombres</label>
     <input type="text" id="nombresMedico" placeholder="Nombres" required>
+    <label for="apellidosMedico">Apellidos</label>
     <input type="text" id="apellidosMedico" placeholder="Apellidos" required>
+    <label for="especialidadMedico">Especilidad</label>
     <input type="text" id="especialidadMedico" placeholder="Especialidad" required>
-    <label id="horaInicioLabel">Hora de Inicio</label> <!-- Se mete label pq el placeholder no se ve con el input type="time" -->
+    <label for="horarioAtencionInicio "id="horaInicioLabel">Hora de Inicio</label> <!-- Se mete label pq el placeholder no se ve con el input type="time" -->
     <input type="time" id="horarioAtencionInicio" placeholder="Hora de Inicio" required>
-    <label id="horaFinLabel">Hora de Fin</label>
+    <label for="horarioAtencionFin" id="horaFinLabel">Hora de Fin</label>
     <input type="time" id="horarioAtencionFin" placeholder="Hora de Fin" required>
+    <label for="aniosExperiencia">Experiencia </label>
     <input type="number" min='0' step='1' id="aniosExperienciaMedico" placeholder="Años de Experiencia" required>
     <!-- Ese min y step es para evitar numeros negativos jasjas-->
+     <label for="biografiaMedico">Biografia</label>
     <input type="text" id="biografiaMedico" placeholder="Biografía" required>
     <button type="submit" id="btnAgregarMedico" disabled>Agregar Medico</button>
   </form>
 
   <h2>Registrar Paciente</h2>
   <form id="formPaciente">
+    <label for="nombresPaciente">Nombres</label>
     <input type="text" id="nombresPaciente" placeholder="Nombres" required>
+    <label for="apellidosPaciente">Apellidos</label>
     <input type="text" id="apellidosPaciente" placeholder="Apellidos" required>
     <button type="submit" id="btnAgregarPaciente" disabled>Agregar Paciente</button>
   </form>
