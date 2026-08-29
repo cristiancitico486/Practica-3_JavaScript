@@ -24,8 +24,22 @@
     <label for="apellidosMedico">Apellidos</label>
     <input type="text" id="apellidosMedico" placeholder="Apellidos" required>
     <label class="error" id="errorApellidosMedico" class="mensaje-error"></label>
-    <label for="especialidadMedico">Especilidad</label>
-    <input type="text" id="especialidadMedico" placeholder="Especialidad" required>
+    <fieldset>
+      <legend>Género</legend>
+      <label><input type="radio" name="genero" value="femenino" required> Femenino</label>
+      <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+      <label><input type="radio" name="genero" value="otro"> Otro</label>
+    </fieldset>
+    <label class="error" id="errorGeneroMedico" class="mensaje-error"></label>
+    <label for="especialidadMedico">Especialidad</label>
+  <!---<input type="text" id="especialidadMedico" placeholder="Especialidad" required>-->
+  <select id="especialidadMedico" placeholder="Especilidad" required>
+    <option value="" disabled selected hidden>Seleccione una opcion</option>
+    <option value="fonoaudilogia">Fonoaudiologia</option>
+    <option value="fonoaudilogia">Fisioterapia</option>
+    <option value="fonoaudilogia">Dermatologia</option>
+    <option value="fonoaudilogia">Cardiologia</option>
+  </select>
     <label class="error" id="errorEspecialidadMedico" class="mensaje-error"></label>
     <label for="horarioAtencionInicio "id="horaInicioLabel">Hora de Inicio</label> <!-- Se mete label pq el placeholder no se ve con el input type="time" -->
     <input type="time" id="horarioAtencionInicio" placeholder="Hora de Inicio" required>

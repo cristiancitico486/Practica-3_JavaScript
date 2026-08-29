@@ -7,10 +7,15 @@ formMedico.addEventListener("input", () => {
   btnAgregarMedico.disabled =! formMedico.checkValidity();
 });
 
+formMedico.addEventListener("change", () => {
+  btnAgregarMedico.disabled = !formMedico.checkValidity();
+});
+
 formMedico.addEventListener("submit", (e) => {
   e.preventDefault();
   const nombres = document.getElementById("nombresMedico").value;
   const apellidos = document.getElementById("apellidosMedico").value;
+  const genero = document.querySelector('input[name="genero"]:checked').value;
   const especialidad = document.getElementById("especialidadMedico").value;
   const horarioAtencionInicio = document.getElementById("horarioAtencionInicio").value;
   const horarioAtencionFin = document.getElementById("horarioAtencionFin").value;
@@ -20,6 +25,7 @@ formMedico.addEventListener("submit", (e) => {
   const medico = gestionarMedicos.registrarMedico(
     nombres,
     apellidos,
+    genero,
     especialidad,
     horarioAtencionInicio,
     horarioAtencionFin,
