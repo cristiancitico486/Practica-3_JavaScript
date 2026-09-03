@@ -27,4 +27,4 @@ formPaciente.addEventListener("submit", (e) => {
 });
 
 
-//agregar select y radio button y hacer validacion
+//agregar select y radio button y hacer validacion - realizado

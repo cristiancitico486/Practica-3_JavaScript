@@ -19,6 +19,9 @@ class GestionarCitas {
     if (horaInicio < medico.horarioAtencion[0] || horaFin > medico.horarioAtencion[1]) {
       throw new Error("La cita está fuera del horario de atención del médico");
     }
+    if(horaFin<horaInicio){
+      throw new Error("Horario Inválido")
+    }
 
     const cita = new Cita(id, fecha, horaInicio, horaFin, medico, paciente);
     this.citaRepo.agregar(cita);
